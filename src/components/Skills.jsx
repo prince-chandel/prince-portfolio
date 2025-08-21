@@ -1,0 +1,6 @@
+import React from 'react'
+import { motion } from 'framer-motion'
+import { FaHtml5, FaCss3Alt, FaJs, FaJava, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa'
+import { SiExpress } from 'react-icons/si'
+const skills=[{name:'HTML',icon:<FaHtml5 className='text-orange-500'/>},{name:'CSS',icon:<FaCss3Alt className='text-blue-500'/>},{name:'JavaScript',icon:<FaJs className='text-yellow-400'/>},{name:'Core Java',icon:<FaJava className='text-red-500'/>},{name:'React',icon:<FaReact className='text-sky-400'/>},{name:'Node.js',icon:<FaNodeJs className='text-green-500'/>},{name:'Express.js',icon:<SiExpress/>},{name:'MySQL',icon:<FaDatabase className='text-indigo-500'/>},]
+export default function Skills(){return(<section id='skills' className='section'><div className='max-w-6xl mx-auto px-4'><h2 className='text-3xl font-semibold text-center mb-10 gradient-text'>Skills</h2><div className='grid xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6'>{skills.map((s,i)=>(<motion.div key={s.name} initial={{opacity:0,y:30}} whileInView={{opacity:1,y:0}} transition={{delay:i*0.1}} viewport={{once:true}} className='card flex flex-col items-center'><div className='text-4xl'>{s.icon}</div><p className='mt-2'>{s.name}</p></motion.div>))}</div></div></section>)}

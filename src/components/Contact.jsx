@@ -1,0 +1,3 @@
+import React from 'react'
+import { FaEnvelope, FaLinkedin, FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa'
+export default function Contact(){return(<section id='contact' className='section text-center'><h2 className='gradient-text text-3xl font-semibold mb-4'>Contact</h2><div className='flex justify-center gap-6 text-2xl'><a href='mailto:prince1chadel@gmail.com'><FaEnvelope/></a><a href='https://www.linkedin.com/in/princechandel/' target='_blank'><FaLinkedin/></a><a href='https://github.com/your-github' target='_blank'><FaGithub/></a><a href='https://www.instagram.com/prince.chandel_/' target='_blank'><FaInstagram/></a><a href='https://x.com/chandel666' target='_blank'><FaTwitter/></a></div></section>)}

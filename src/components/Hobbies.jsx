@@ -1,0 +1,4 @@
+import React from 'react'
+import { motion } from 'framer-motion'
+const hobbies=['Reading Books','Watching Podcasts','Travelling','Listening Music']
+export default function Hobbies(){return(<section id='hobbies' className='section'><div className='max-w-6xl mx-auto px-4 text-center'><h2 className='text-3xl font-semibold gradient-text mb-10'>Hobbies</h2><div className='grid sm:grid-cols-2 md:grid-cols-4 gap-6'>{hobbies.map((h,i)=>(<motion.div key={h} initial={{opacity:0,y:40}} whileInView={{opacity:1,y:0}} transition={{delay:i*0.1}} viewport={{once:true}} className='card'><p>{h}</p></motion.div>))}</div></div></section>)}

@@ -1,0 +1,2 @@
+import React from 'react'
+export default function Footer(){return(<footer className='py-6 text-center text-neutral-500 border-t border-neutral-200 dark:border-neutral-800'>© {new Date().getFullYear()} Prince</footer>)}
