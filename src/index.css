@@ -6,3 +6,6 @@ html { scroll-behavior: smooth; }
 .gradient-text { @apply bg-gradient-to-r from-indigo-400 via-sky-400 to-emerald-400 bg-clip-text text-transparent; }
 .card { @apply rounded-2xl p-6 bg-neutral-100 dark:bg-neutral-900 shadow-lg border border-neutral-200 dark:border-neutral-800 transition-colors duration-500; }
 .btn-primary { @apply inline-flex items-center gap-2 rounded-xl px-5 py-3 font-medium bg-gradient-to-r from-indigo-500 to-sky-500 text-white hover:opacity-90 transition; }
+html, body {
+  overflow-x: hidden;
+}
