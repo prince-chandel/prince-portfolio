@@ -33,7 +33,7 @@ export default function Navbar({ dark, setDark }) {
         
         {/* Logo */}
         <a href="#" className="font-bold text-lg">
-          Prince<span className="text-sky-500"></span>
+          Prince<span className="text-sky-500"> Portfolio</span>
         </a>
 
         {/* Desktop Menu */}
